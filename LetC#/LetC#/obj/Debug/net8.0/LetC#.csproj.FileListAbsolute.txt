@@ -1,0 +1,15 @@
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\bin\Debug\net8.0\LetC#.exe
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\bin\Debug\net8.0\LetC#.deps.json
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\bin\Debug\net8.0\LetC#.runtimeconfig.json
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\bin\Debug\net8.0\LetC#.dll
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\bin\Debug\net8.0\LetC#.pdb
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.AssemblyInfoInputs.cache
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.AssemblyInfo.cs
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.csproj.CoreCompileInputs.cache
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.sourcelink.json
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.dll
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\refint\LetC#.dll
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.pdb
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\LetC#.genruntimeconfig.cache
+C:\Users\samil\Desktop\leetCode\LetC#\LetC#\obj\Debug\net8.0\ref\LetC#.dll
