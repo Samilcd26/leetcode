@@ -1,47 +1,55 @@
-﻿
-Solution test = new();
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Text.RegularExpressions;
+
+Solution.IsPalindrome("`l;`` 1o1 ??;l`");
 
 
-Console.WriteLine(test.Generate(5));
-
-public class PascalTriangle
+public class Solution
 {
-    public IList<IList<int>> Generate(int numRows)
+    public static bool IsPalindrome(string s)
     {
-        var outList = new List<IList<int>>();
-       
-        outList.Add(new List<int> { 0,1,0 });
-       
-        for (int i = 0; i < numRows-1; i++)
+        //j is last eleman from list
+        char[] charArr = s.ToCharArray();
+        for (int c = 0, j = s.Length - 1; c < j;)
         {
-            var tempList = new List<int>();
-            
-            for (global::System.Int32 j = 0; j < outList[i].Count-1; j++)
+            if (!Char.IsLetterOrDigit(s[c]))
             {
-                
-                tempList.Add(outList[i][j] + outList[i][j + 1]);
-
-                
+                c++;
+                continue;
             }
-            tempList.Insert(0, 0);
-            tempList.Add(0);
-            outList.Add(tempList);
+
+
+            if (!Char.IsLetterOrDigit(s[j]))
+            {
+                j--;
+                continue;
+            }
+            if (Char.ToLower(s[c++]) != Char.ToLower(s[j--]))
+                return false;
         }
-
-        for (int a = 0; a < outList.Count; a++)
-        {
-            outList[a].RemoveAt(0);
-            outList[a].RemoveAt(outList[a].Count - 1);
-
-
-        }
-
-
-      
-
-        return outList;
+        return true;
     }
 }
 
+//Best solution
+/*
+   char[] charArr = s.ToCharArray();
+       for(int c = 0, j = s.Length - 1; c<j;)
+       {
+           if(!Char.IsLetterOrDigit(s[c]))
+           {
+               c++;
+               continue;
+           }
 
-
+           
+            if(!Char.IsLetterOrDigit(s[j]))
+           {
+               j--;
+               continue;
+           }
+            if(Char.ToLower(s[c++]) != Char.ToLower(s[j--]))
+                return false;
+       }
+       return true;
+ */
