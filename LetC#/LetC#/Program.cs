@@ -1,55 +1,35 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-using System.Text.RegularExpressions;
+﻿
 
-Solution.IsPalindrome("`l;`` 1o1 ??;l`");
+using LetC_.Public;
+
+
+Solution.ReferenceEquals(new ListNode(1), new ListNode(1)); // false
+
 
 
 public class Solution
 {
-    public static bool IsPalindrome(string s)
+    public static bool HasCycle(ListNode head)
     {
-        //j is last eleman from list
-        char[] charArr = s.ToCharArray();
-        for (int c = 0, j = s.Length - 1; c < j;)
+
+        if (head == null || head.next == null)
         {
-            if (!Char.IsLetterOrDigit(s[c]))
-            {
-                c++;
-                continue;
-            }
-
-
-            if (!Char.IsLetterOrDigit(s[j]))
-            {
-                j--;
-                continue;
-            }
-            if (Char.ToLower(s[c++]) != Char.ToLower(s[j--]))
-                return false;
+            return false;
         }
-        return true;
+        ListNode slow = head;
+        ListNode fast = head.next;
+
+        while (slow!= fast)
+        {
+            if (fast == null || fast.next == null)
+            {
+                return false;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+
+        return false;
     }
 }
-
-//Best solution
-/*
-   char[] charArr = s.ToCharArray();
-       for(int c = 0, j = s.Length - 1; c<j;)
-       {
-           if(!Char.IsLetterOrDigit(s[c]))
-           {
-               c++;
-               continue;
-           }
-
-           
-            if(!Char.IsLetterOrDigit(s[j]))
-           {
-               j--;
-               continue;
-           }
-            if(Char.ToLower(s[c++]) != Char.ToLower(s[j--]))
-                return false;
-       }
-       return true;
- */

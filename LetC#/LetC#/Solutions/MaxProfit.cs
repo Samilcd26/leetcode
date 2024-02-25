@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LetC_.Solutions
+namespace LetC_.Solutions1
 {
     public class Solution
     {
