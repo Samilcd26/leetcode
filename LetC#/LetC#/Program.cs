@@ -1,35 +1,37 @@
 ﻿
-
-using LetC_.Public;
-
-
-Solution.ReferenceEquals(new ListNode(1), new ListNode(1)); // false
+Console.WriteLine(Solution.IsHappy(7));
 
 
-
-public class Solution
+ class Solution
 {
-    public static bool HasCycle(ListNode head)
+    public static bool IsHappy(int n)
     {
-
-        if (head == null || head.next == null)
+        
+        
+        List<int> basamaklar = new List<int>();
+        if (n>9)
         {
-            return false;
-        }
-        ListNode slow = head;
-        ListNode fast = head.next;
-
-        while (slow!= fast)
-        {
-            if (fast == null || fast.next == null)
+            while (n > 0)
             {
-                return false;
+                int basamak = n % 10;
+                basamaklar.Add(basamak);
+                n /= 10;
             }
-            slow = slow.next;
-            fast = fast.next.next;
+            basamaklar.Reverse();
         }
 
 
-        return false;
+        int temp = 0;
+        foreach (int item in basamaklar)
+        {
+            temp = item * item+temp;
+        }
+        
+
+        if (temp == 1) return basamaklar[0] == 1;
+
+        if (4 >= temp) return false;
+        else return IsHappy(temp);
+
     }
 }

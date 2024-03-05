@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LetC#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecd7cf997cc65494babefc488b927a1969af1893")]
 [assembly: System.Reflection.AssemblyProductAttribute("LetC#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LetC#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

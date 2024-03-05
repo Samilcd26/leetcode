@@ -16,7 +16,7 @@ namespace LetC_.Public
             next = null;
                  }
   }
-
+    /*
     public static ListNode ToList(int[] arr)
     {
         ListNode head = new ListNode(arr[0]);
@@ -29,4 +29,5 @@ namespace LetC_.Public
 
         return head;
     }
+    */
 }
